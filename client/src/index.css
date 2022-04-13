@@ -1,0 +1,48 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text-field {
+  margin-right: 1rem;
+  padding: 0, 24px;
+  width: 15%;
+  display: flex;
+  float: left;
+}
+
+.bar{
+  margin-bottom: 15px;
+}
+
+.title{
+  margin: .5rem 1rem 0 0;
+  width: 40%;
+  display: flex;
+  justify-content: right;
+  font-size: xx-large;
+  float: left;
+}
+
+.boton {
+  display: flex;
+  float: left;
+}
+
+.boton CardContent {
+  display: flex;
+}
+
+.filter {
+  display: inline-flex;
+  float: left;
+  border-color: #8BBAE8;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+}
