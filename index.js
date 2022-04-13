@@ -32,6 +32,8 @@ MongoClient.connect(
 
         //App listener
         app.listen(port, () => {
-            console.log(`listening on port ${port}`)
+            if (process.env.NODE_DEV === 'developement'){
+                console.log(`listening on port ${port}`)
+            }
         });
     })

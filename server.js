@@ -5,7 +5,7 @@ import companies from "./api/companies.route.js";
 import devices from "./api/devices.route.js";
 import records from  "./api/records.route.js";
 import dotenv from "dotenv";
-import * as path from 'path'
+import * as path from 'path';
 
 dotenv.config();
 
@@ -21,7 +21,7 @@ app.use("/api/v1/companies",companies);
 app.use("/api/v1/devices",devices);
 app.use("/api/v1/records",records);
 
-__dirname = path.resolve();
+const __dirname = path.resolve();
 if (process.env.NODE_DEV === 'production'){
     app.use(express.static(path.join(__dirname,'frontend','build')))
     app.get('*', (req,res) => {
